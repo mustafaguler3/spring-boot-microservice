@@ -5,13 +5,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter
 @Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class DepartmentDto {
-    private Long id;
-    private String departmentName;
-    private String departmentDescription;
-    private String departmentCode;
+public class APIResponseDto {
+    private EmployeeDto employeeDto;
+    private DepartmentDto departmentDto;
 }
